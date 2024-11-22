@@ -41,8 +41,14 @@ html{
 
         .card img{
             width:25vw;
-            height: auto;
+            height: 15vh;
+            background-color:rgb(42, 113, 184);
+            border-radius: 20px;
         }
+
+            .card img.flipped {
+                transform: rotateY(180deg);
+            }
 
 @media screen and (min-width:400px) and (max-width:700px){
 
@@ -53,6 +59,7 @@ html{
     h2{
         font-size: 3vw;
     }
+
 }
 
 @media screen and (min-width:701px)  and (max-width:1000px){
@@ -63,6 +70,13 @@ html{
 
     h2{
         font-size: 2vw;
+    }
+
+    .card img{
+        width:15vw;
+        height: 15vh;
+        background-color:rgb(42, 113, 184);
+        border-radius: 20px;
     }
 
 }
@@ -77,6 +91,18 @@ html{
         font-size: 1.5vw;
     }
 
+    #board{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+    }
+
+    .card img{
+        width:10vw;
+        height: 15vh;
+        background-color:rgb(42, 113, 184);
+        border-radius: 20px;
+    }
+
 }
 
 @media screen and (min-width:1201px){
@@ -87,6 +113,18 @@ html{
 
     h2{
         font-size: 1vw;
+    }
+
+    #board{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr;     
+    }
+
+    .card img{
+        width:8vw;
+        height: 17vh;
+        background-color:rgb(42, 113, 184);
+        border-radius: 20px;
     }
 
 }
